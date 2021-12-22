@@ -18,4 +18,4 @@
 
 - **PRA_Aaron_Puche_Benedito.html**: Versió HTML de l'arxiu anterior.
 
-- **Visualització.html**: Enllaç directe a la visualització.
+- **Visualització.html**: Enllaç directe a la [visualització](https://public.flourish.studio/story/1074162/).
