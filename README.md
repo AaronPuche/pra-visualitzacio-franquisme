@@ -17,3 +17,5 @@
 - **PRA_Aaron_Puche_Benedito.ipynb**: Arxiu Jupyter Notebook amb el qual hem tractat les dades originals per adaptar-les a cada visualització realitzada.
 
 - **PRA_Aaron_Puche_Benedito.html**: Versió HTML de l'arxiu anterior.
+
+- **Visualització.html**: Enllaç directe a la visualització.
