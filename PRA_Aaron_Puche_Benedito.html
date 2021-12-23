@@ -14286,8 +14286,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Pregunta-1:-En-quines-comarques-hi-ha-hagut-m%C3%A9s-repressi%C3%B3?">Pregunta 1: En quines comarques hi ha hagut m&#233;s repressi&#243;?<a class="anchor-link" href="#Pregunta-1:-En-quines-comarques-hi-ha-hagut-m%C3%A9s-repressi%C3%B3?">&#182;</a></h3><p>Per a respondre a aquestes dades hem decidit realitzar una visualització amb un mapa i punts sobre ell.</p>
-<p>Per a respondre a aquestes dades hem decidit realitzar una visualització amb un mapa. En concret ho farem amb un mapa de Catalunya dividit per les comarques. D'aquesta manera veurem de forma molt intuïtiva quin ha sigut el nivell de repressió per comarca.</p>
+<h3 id="Pregunta-1:-En-quines-comarques-hi-ha-hagut-m%C3%A9s-repressi%C3%B3?">Pregunta 1: En quines comarques hi ha hagut m&#233;s repressi&#243;?<a class="anchor-link" href="#Pregunta-1:-En-quines-comarques-hi-ha-hagut-m%C3%A9s-repressi%C3%B3?">&#182;</a></h3><p>Per a respondre a aquesta pregunta hem decidit realitzar una visualització amb un mapa. En concret ho farem amb un mapa de Catalunya dividit per les comarques. D'aquesta manera veurem de forma molt intuïtiva quin ha sigut el nivell de repressió per comarca.</p>
 <p>El que farem és veure el nombre total de persones que han sigut sentenciades amb alguna pena al llarg dels anys per comarca. Per a fer això necessitem saber a quina comarca pertany cada cas i l'any de la seua sentència.</p>
 <p>L'any de la sentència ho tenim clar, ja que és el camp <em>Any aprovació sen o altra resol</em>. Però per decidir la comarca ala que pertany la persona tenim dues opcions, agafar les dades de naixement o les dades de residència. Hem cregut que serà millor agafar les dades de residència, ja que creguem que és on la persona estaria vivint quan va ser jutjada.</p>
 <p>Veiem quins llocs de residència tenim:</p>
@@ -14645,7 +14644,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Podem veure també el valor '--'. Aquest valor indicara que no res coneix la comarca de residència.</p>
+<p>Podem veure també el valor '--'. Aquest valor indicarà que no res coneix la comarca de residència.</p>
 <p>Comprovem si hi ha molts casos:</p>
 
 </div>
@@ -14892,7 +14891,6 @@ a.anchor-link {
 <span class="n">anys_sentencia</span> <span class="o">=</span> <span class="n">df_catalunya</span><span class="p">[</span><span class="s2">&quot;Any aprovació sen o altra resol&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 
 <span class="c1"># Afegim la columna comarca</span>
-<span class="c1"># Són les comarques úniques ordenades alfabèticament</span>
 <span class="n">df_mapa</span><span class="p">[</span><span class="s2">&quot;comarca&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_catalunya</span><span class="p">[</span><span class="s2">&quot;Comarca residència&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
 
 <span class="c1"># Comprovem</span>
@@ -15211,7 +15209,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Veient els atributs que tenim de les víctimes, agafarem la comunitat de residència i l'edat per veure si hi ha alguna diferència significativa en la repressió que van sofrir les persones que vivien en una mateixa província o tingueren una mateixa edat. Farem una distinció per sexe i així tindrem present una perspectiva de gènere. D'aquesta manera comprovarem si en algunes províncies o rangs d'edat la repressió ha estat més present en homes o dones.</p>
+<p>Veient els atributs que tenim de les víctimes, agafarem la comunitat de residència i l'edat per veure si hi ha alguna diferència significativa en la repressió que van sofrir les persones que vivien en una mateixa província o tenien una mateixa edat. Farem una distinció per sexe i així tindrem present una perspectiva de gènere. D'aquesta manera comprovarem si en algunes províncies o rangs d'edat la repressió ha estat més present en homes o dones.</p>
 <p>Volem fer una comparació relativa, per tant, utilitzarem un gràfic de barres apilades al 100%. En concret farem servir dos gràfics d'aquests, un agrupant les víctimes per edat i altre per província.</p>
 <p>Elegim la província, ja que si fem la comparació per comarques o municipis hi haurà massa columnes i açò és una limitació d'aquest tipus de gràfics. Seria molt difícil obtenir informació útil amb eixa visualització.</p>
 <p>Pel que fa als anys, els dividirem en rangs pel mateix motiu.</p>
